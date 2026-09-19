@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WayWise | Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="settings-page">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="WayWise home">
+          <span class="brand-mark">W</span>
+          <span>WayWise</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="profile.html">Profile</a>
+          <a href="settings.html" class="active">Settings / Contact</a>
+        </nav>
+        <a href="login.html" class="button button-primary nav-cta">Login / Sign Up</a>
+      </div>
+    </header>
+
+    <main class="container settings-layout">
+      <section class="settings-panel">
+        <h1>Settings</h1>
+
+        <div class="settings-group">
+          <h2>Navigation preferences</h2>
+          <label class="toggle-row"><input type="checkbox" checked /> Avoid tolls</label>
+          <label class="toggle-row"><input type="checkbox" /> Avoid highways</label>
+          <label class="toggle-row"><input type="checkbox" checked /> Prefer faster routes</label>
+        </div>
+
+        <div class="settings-group">
+          <h2>Notifications</h2>
+          <label class="toggle-row"><input type="checkbox" checked /> Alternative route alerts</label>
+          <label class="toggle-row"><input type="checkbox" checked /> Traffic alerts</label>
+        </div>
+
+        <div class="settings-group">
+          <h2>Map settings</h2>
+          <label class="toggle-row"><input type="checkbox" checked /> Map display preferences</label>
+          <label class="toggle-row"><input type="checkbox" /> Night mode</label>
+        </div>
+
+        <div class="settings-group">
+          <h2>Privacy settings</h2>
+          <label class="toggle-row"><input type="checkbox" checked /> Share anonymous route data</label>
+          <label class="toggle-row"><input type="checkbox" checked /> Keep contacts private</label>
+        </div>
+
+        <div class="settings-group">
+          <h2>Help and support</h2>
+          <p>Need help with a route or account setting? Contact our support team for quick assistance.</p>
+        </div>
+      </section>
+
+      <aside class="support-panel">
+        <div class="support-card">
+          <h2>Contact</h2>
+          <p><strong>Email:</strong> support@waywise.app</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Hours:</strong> Monday to Saturday, 9am to 6pm</p>
+        </div>
+
+        <form id="reportForm" class="report-form" novalidate>
+          <h2>Feedback / Report Issue</h2>
+          <div class="field-group">
+            <label for="issueType">Issue type</label>
+            <select id="issueType" name="issueType">
+              <option value="">Select a type</option>
+              <option value="Incorrect route">Incorrect route</option>
+              <option value="Incorrect traffic">Incorrect traffic</option>
+              <option value="Blocked / changed road">Blocked / changed road</option>
+              <option value="Incorrect location">Incorrect location</option>
+              <option value="Inaccurate ETA">Inaccurate ETA</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="issueDetails">Details</label>
+            <textarea id="issueDetails" name="details" rows="4" placeholder="Tell us what seems incorrect"></textarea>
+          </div>
+          <button type="submit" class="button button-primary full-width">Submit Report</button>
+          <p id="feedbackSuccess" class="success-message hidden" aria-live="polite">Thanks for helping make WayWise more precise.</p>
+          <div id="reportStatus" class="report-status" aria-live="polite">Reported → Reviewed → Updated</div>
+        </form>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WayWise | Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="profile-page">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="WayWise home">
+          <span class="brand-mark">W</span>
+          <span>WayWise</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="profile.html" class="active">Profile</a>
+          <a href="settings.html">Settings / Contact</a>
+        </nav>
+        <a href="login.html" class="button button-primary nav-cta">Login / Sign Up</a>
+      </div>
+    </header>
+
+    <main class="container profile-layout">
+      <section class="profile-card">
+        <div class="avatar">JV</div>
+        <div class="profile-summary">
+          <h1 id="profileName">Jiya Verma</h1>
+          <p id="profileEmail">jiya.verma@email.com</p>
+        </div>
+        <button id="editProfileBtn" class="button button-primary" type="button">Edit Profile</button>
+      </section>
+
+      <section class="profile-grid">
+        <article class="info-card">
+          <h3>Saved places</h3>
+          <ul>
+            <li>Home - Delhi</li>
+            <li>College - Dwarka</li>
+            <li>Work - Saket</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Navigation history</h3>
+          <ul>
+            <li>Central Secretariat → India Gate</li>
+            <li>Dwarka Sector 13 → IGI Airport</li>
+            <li>Janakpuri → Rohini</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Feedback history</h3>
+          <ul>
+            <li>Route 2 reported as delayed</li>
+            <li>Road closure updated</li>
+            <li>ETA adjusted after review</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Navigation preferences</h3>
+          <ul>
+            <li>Avoid tolls</li>
+            <li>Prefer faster routes</li>
+            <li>Alerts on traffic changes</li>
+          </ul>
+        </article>
+      </section>
+
+      <form id="profileForm" class="profile-form hidden" novalidate>
+        <div class="field-group">
+          <label for="profileNameInput">Name</label>
+          <input id="profileNameInput" type="text" value="Jiya Verma" />
+        </div>
+        <div class="field-group">
+          <label for="profileEmailInput">Email</label>
+          <input id="profileEmailInput" type="email" value="jiya.verma@email.com" />
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="button button-primary">Save Changes</button>
+          <button id="cancelProfileBtn" type="button" class="button button-secondary">Cancel</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

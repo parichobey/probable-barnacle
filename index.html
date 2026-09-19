@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WayWise | Navigate your way</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="landing-page">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="WayWise home">
+          <span class="brand-mark">W</span>
+          <span>WayWise</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings / Contact</a>
+        </nav>
+        <a href="login.html" class="button button-primary nav-cta">Login / Sign Up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Smart route control</p>
+          <h1>Navigate your way, not the app's way.</h1>
+          <p class="hero-text">
+            WayWise gives you multiple route choices and keeps you in control. Compare
+            travel time, distance, road quality, and traffic before deciding the route that
+            fits your day.
+          </p>
+          <div class="hero-actions">
+            <a href="dashboard.html" class="button button-primary">Get Started</a>
+            <a href="login.html" class="button button-secondary">Login / Sign Up</a>
+          </div>
+        </div>
+
+        <div class="map-preview-card" aria-label="WayWise map preview">
+          <div class="map-preview-topbar">
+            <span class="dot blue"></span>
+            <span class="dot green"></span>
+            <span class="dot orange"></span>
+          </div>
+          <div class="mini-map">
+            <div class="route-line route-one"></div>
+            <div class="route-line route-two"></div>
+            <div class="route-line route-three"></div>
+            <div class="map-pin start">A</div>
+            <div class="map-pin end">B</div>
+            <div class="map-chip">Fastest route</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits container">
+        <div class="section-header">
+          <p class="eyebrow">Why WayWise</p>
+          <h2>Route decisions made simple</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">🧭</div>
+            <h3>Choose your route</h3>
+            <p>Review multiple route options and choose the one that fits your trip.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🚫</div>
+            <h3>No automatic route changes</h3>
+            <p>Your selected path stays in place unless you decide to switch routes.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">⏱️</div>
+            <h3>Clear ETA and distance</h3>
+            <p>Know what to expect before you leave, from drive time to route length.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">📣</div>
+            <h3>Report incorrect information</h3>
+            <p>Flag inaccurate traffic, roads, or location data to improve navigation.</p>
+          </article>
+          <article class="benefit-card wide-card">
+            <div class="benefit-icon">🎯</div>
+            <h3>User-controlled navigation</h3>
+            <p>WayWise helps with route awareness, but the final decision remains with you.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow">Start navigating with confidence</p>
+            <h2>Take control of every trip.</h2>
+          </div>
+          <a href="dashboard.html" class="button button-primary">Open Dashboard</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
